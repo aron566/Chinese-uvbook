@@ -94,6 +94,11 @@ uv_fs_t stdin_watcher;
 uv_idle_t idler;
 char buffer[1024];
 
+void on_type(uv_fs_t* req)
+{
+
+}
+
 int main() {
     loop = uv_default_loop();
 
